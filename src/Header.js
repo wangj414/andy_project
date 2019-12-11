@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import icon from './icon.png';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from "./Home";
 import AboutUs from "./AboutUs";
@@ -13,6 +14,14 @@ export default function Header(){
     <Router>
     <Navbar bg = "light" expand="lg">
     <Nav className="Nav">
+    <Navbar.Brand href="/">
+      <img
+        src={icon}
+        width="80"
+        height="30"
+        className="d-inline-block align-top"
+      />
+    </Navbar.Brand>
     <Nav.Link href='/'>Home</Nav.Link>
     <Nav.Link href='/about'>About us</Nav.Link>
     <Nav.Link href='/services'>Services</Nav.Link>
