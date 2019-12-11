@@ -1,1 +1,1 @@
-web: node src/serviceWorker.js
+web: react-scripts start
